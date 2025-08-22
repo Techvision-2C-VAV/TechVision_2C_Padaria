@@ -3,7 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Padaria Pão & Amor</title>
+  <title>Padaria Grano d’Oro</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -69,7 +73,7 @@
       <div class="brand">
         <div class="logo">P&L</div>
         <div>
-          <div style="font-weight:700">Padaria Pão & Amor</div>
+          <div style="font-weight:700">Padaria Grano d’Oro</div>
           <div style="font-size:12px;color:rgba(255,255,255,0.9)">Pães frescos todos os dias</div>
         </div>
       </div>
@@ -89,7 +93,7 @@
     <section class="hero">
       <div>
         <h1>Pães artesanais, bolos e café — prontos para seu dia.</h1>
-        <p>Na Padaria Pão & Amor preparamos tudo com carinho: ingredientes frescos, receitas tradicionais e atendimento acolhedor. Veja nossos destaques e faça sua encomenda.</p>
+        <p>Na Padaria Grano D´Oro preparamos tudo com carinho: ingredientes frescos, receitas tradicionais e atendimento acolhedor. Conheça nossa loja!</p>
         <div class="cta">
           <button class="btn btn-primary">Ver menu</button>
           <button class="btn btn-outline">Encomendar</button>
@@ -111,10 +115,10 @@
 
       <div>
         <div class="card">
-          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=0f3f8b9c1e4bd0a4bf9fbd6e8b6a8d3f" alt="pães" style="width:100%;height:260px;object-fit:cover;border-radius:10px;margin-bottom:12px">
+          <img src="variosPao.jpg" alt="pães" style="width:100%;height:260px;object-fit:cover;border-radius:10px;margin-bottom:12px">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <div>
-              <div style="font-weight:700">Pão da casa</div>
+              <div style="font-weight:700">Pães da casa</div>
               <div class="muted">Crosta crocante e miolo macio</div>
             </div>
             <div style="font-weight:700;color:var(--accent)">R$ 8,50</div>
@@ -131,19 +135,19 @@
 
       <div class="product-grid">
         <article class="product card">
-          <img src="https://images.unsplash.com/photo-1608198093002-9ec3c0f1e7f0?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=9b5f3e0a3e7b2c6b" alt="croissant">
+          <img src="croissant.avif" alt="croissant">
           <h4>Croissant amanteigado</h4>
           <div class="meta"><span class="muted">Pâtisserie</span><span><strong>R$ 6,00</strong></span></div>
         </article>
 
         <article class="product card">
-          <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=3b5a9f7b1a7e8d3f" alt="bolo">
-          <h4>Bolo de cenoura</h4>
+          <img src="bolochu.jpg" alt="bolo">
+          <h4>Bolos</h4>
           <div class="meta"><span class="muted">Fatia</span><span><strong>R$ 7,00</strong></span></div>
         </article>
 
         <article class="product card">
-          <img src="https://images.unsplash.com/photo-1505250469679-203ad9ced0cb?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=8b6f8c4d6e5b2f1a" alt="pão francês">
+          <img src="paofrances.avif" alt="pão francês">
           <h4>Pão francês</h4>
           <div class="meta"><span class="muted">Unidade</span><span><strong>R$ 1,50</strong></span></div>
         </article>
