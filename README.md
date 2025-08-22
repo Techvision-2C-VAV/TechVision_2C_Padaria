@@ -13,8 +13,8 @@ Este projeto foi realizado pelos alunos do **2º ano do curso de Desenvolvimento
 - **Vinícius Gomes Correia**  
 
 **Orientadores:**  
-- Ronildo Aprecido Ferreira
-- Luciana  
+- Ronildo Aparecido Ferreira
+- Luciana Ferreira Baptista
 
 ---
 
