@@ -7,7 +7,7 @@ Bem-vindo ao repositório oficial do **Sistema de Padaria**, um projeto desenvol
 ## 👥 Equipe de Desenvolvimento
 Este projeto foi realizado pelos alunos do **2º ano do curso de Desenvolvimento de Sistemas**:
 
-- **Beatriz Lia de Carvalho**  
+- **Beatriz Lima de Carvalho**  
 - **Clarice Dias Ribeiro**  
 - **Gustavo Guilherme Fernandes Silva**  
 - **Vinícius Gomes Correia**  
