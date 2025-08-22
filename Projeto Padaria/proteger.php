@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['usuario']) || !isset($_SESSION['funcao'])) {
     // Se não estiver logado, redireciona para a tela de login
-    header("Location: index.php");
+    header("Location: entrar.php");
     exit();
 }
 
