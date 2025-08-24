@@ -7,6 +7,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="stylesheet" href="src/styles/header.css">
   <link rel="stylesheet" href="src/styles/styles.css">
+  <link rel="stylesheet" href="src/styles/home.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -56,32 +57,52 @@
   </header>
 
   <main id="content">
-    <sction id="home">
+    <section id="home">
+
+      <div id="shape"></div>
+
       <div id="cta">
 
-        <h1 id="title">
-          O sabor vai até 
+        <h1 class="title">
+          O sabor que vai até 
           <span>você</span>
         </h1>
 
-        <p id="description">aaaaaaaaa aaaa aaaaaaaaaaa aaaaaaaa aaaaa aaa
+        <p class="description">aaaaaaaaa aaaa aaaaaaaaaaa aaaaaaaa aaaaa aaa
           aaaaaaaa aaaaaaaaaaaa aaa aaaaa aaaaa
         </p>
 
         <div id="cta_buttons">
          <a href="#" class="btn-default"> Ver Cardápio</a> 
 
-         <a href="tel: +1123456789" id="phone_button">
-          <button class="btn-default" > 
-            <i class="fa-solid fa-phone">
-              (11) 12345-6789
-            </i>
-          </button>
-         </a>
+        <a href="tel:+55555555555" id="phone_button">
+        <button class="btn-default">
+        <i class="fa-solid fa-phone"></i>
+        </button>
+        (51) 92342-3243
+        </a>
         </div>
+
+        <div class="social-media-buttons">
+          <a href="https://wa.me/551123456789">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+
+          <a href="">
+            <i class="fa-brands fa-facebook"></i>
+          </a>
+
+        </div>
+
+
       </div>
 
     <div id="banner">
+      <img src="imagens/banner.png" alt="">
 
     </div>
     </sction>
