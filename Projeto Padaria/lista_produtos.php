@@ -115,14 +115,14 @@ $result = $conn->query("SELECT * FROM produtos");
         <tr>
             <td><?= $row['idProd'] ?></td>
             <td>
-                <div class="produto-info">
-                    <?php if (!empty($row['foto'])): ?>
-                        <img src="<?= $row['foto'] ?>" alt="<?= $row['nome'] ?>">
-                    <?php else: ?>
-                        <img src="imagens/default.png" alt="Sem foto">
-                    <?php endif; ?>
-                    <span><?= $row['nome'] ?></span>
-                </div>
+            <div class="produto-info">
+                <?php if (!empty($row['fotos'])): ?>
+                    <img src="<?= $row['fotos'] ?>" alt="<?= $row['nome'] ?>">
+                <?php else: ?>
+                    <img src="imagens/default.png" alt="Sem foto">
+                <?php endif; ?>
+                <span><?= $row['nome'] ?></span>
+            </div>
             </td>
             <td><?= $row['categoria'] ?></td>
             <td>R$ <?= number_format($row['preco'], 2, ',', '.') ?></td>
