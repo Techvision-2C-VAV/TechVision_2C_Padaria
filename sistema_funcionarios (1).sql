@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/08/2025 às 22:42
+-- Tempo de geração: 25/08/2025 às 23:43
 -- Versão do servidor: 10.4.32-MariaDB
--- Versão do PHP: 8.0.30
+-- Versão do PHP: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -67,26 +67,7 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`idProd`, `nome`, `categoria`, `preco`, `quantidade`, `fotos`) VALUES
 (1, 'Brioche', 'Pães Doces', 10.00, 22, 'imagens/brioche.jpg'),
-(22, 'Pão Francês', 'Pães', 0.80, 200, ''),
-(23, 'Pão Integral', 'Pães', 1.20, 100, ''),
-(24, 'Bolo de Chocolate', 'Bolos', 25.00, 15, ''),
-(25, 'Bolo de Cenoura com Cobertura', 'Bolos', 22.50, 10, ''),
-(26, 'Brigadeiro', 'Doces', 1.50, 80, ''),
-(27, 'Beijinho', 'Doces', 1.50, 70, ''),
-(28, 'Coxinha de Frango', 'Salgados', 5.00, 60, ''),
-(29, 'Enroladinho de Salsicha', 'Salgados', 4.50, 50, ''),
-(30, 'Café com Leite', 'Bebidas', 4.00, 40, ''),
-(31, 'Suco Natural de Laranja', 'Bebidas', 6.00, 30, ''),
-(32, 'Torta de Frango', 'Tortas', 30.00, 5, ''),
-(33, 'Torta de Limão', 'Tortas', 28.00, 5, ''),
-(34, 'Biscoito de Polvilho', 'Biscoitos', 3.00, 100, ''),
-(35, 'Cookies com Gotas de Chocolate', 'Biscoitos', 3.50, 90, ''),
-(36, 'Sanduíche Natural de Frango', 'Sanduíches', 8.00, 20, ''),
-(37, 'Sanduíche com Queijo e Presunto', 'Sanduíches', 7.50, 20, ''),
-(38, 'Pão de Linhaça', 'Saudáveis', 2.00, 50, ''),
-(39, 'Bolo Integral de Banana', 'Saudáveis', 18.00, 10, ''),
-(40, 'Pão sem Glúten', 'Sem Glúten', 3.00, 30, ''),
-(41, 'Brownie sem Glúten', 'Sem Glúten', 4.50, 25, '');
+(42, 'Donuts', 'Doces', 5.00, 10, 'imagens/68acd87689b34.jpg');
 
 --
 -- Índices para tabelas despejadas
@@ -118,7 +99,7 @@ ALTER TABLE `funcionarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `idProd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `idProd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
