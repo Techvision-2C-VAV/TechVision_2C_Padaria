@@ -19,6 +19,8 @@ if ($result->num_rows != 1) {
 
 $funcionario = $result->fetch_assoc();
 
+$result_msg = "";
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $usuario = $_POST['usuario'];
     $nome_completo = $_POST['nome_completo'];
@@ -26,7 +28,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $funcao = $_POST['funcao'];
 
     if ($usuario == '' || $nome_completo == '' || $email == '' || $funcao == '') {
-        echo "Preencha todos os campos!";
+        $result_msg = "<p style='color:red;'>Preencha todos os campos!</p>";
     } else {
         $sql = "UPDATE funcionarios SET 
             usuario='$usuario', 
@@ -36,32 +38,107 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             WHERE idFunc = $id";
 
         if ($conn->query($sql) === TRUE) {
-            echo "Atualizado com sucesso! <a href='listar_funcionarios.php'>Voltar</a>";
-            exit;
+            $result_msg = "<p style='color:green;'>Atualizado com sucesso! <a href='listar_funcionarios.php'>Voltar</a></p>";
         } else {
-            echo "Erro ao atualizar: " . $conn->error;
+            $result_msg = "<p style='color:red;'>Erro ao atualizar: " . $conn->error . "</p>";
         }
     }
 }
 ?>
 
-<h2>Editar Funcionário</h2>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Funcionário</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #fff9ef;
+            margin: 20px;
+        }
 
-<form method="post">
-    Usuário:<br>
-    <input type="text" name="usuario" value="<?= $funcionario['usuario'] ?>"><br><br>
+        a.voltar {
+            text-decoration: none;
+            font-weight: 500;
+            color: #f4a300;
+            display: inline-block;
+            margin-bottom: 15px;
+            transition: 0.3s;
+        }
 
-    Nome completo:<br>
-    <input type="text" name="nome_completo" value="<?= $funcionario['nome_completo'] ?>"><br><br>
+        a.voltar:hover {
+            text-decoration: underline;
+        }
 
-    Email:<br>
-    <input type="email" name="email" value="<?= $funcionario['email'] ?>"><br><br>
+        h2 {
+            color: #222;
+            margin-bottom: 20px;
+        }
 
-    Função:<br>
-    <select name="funcao">
-        <option value="funcionario" <?= $funcionario['funcao'] == 'funcionario' ? 'selected' : '' ?>>Funcionário</option>
-        <option value="outro" <?= $funcionario['funcao'] == 'outro' ? 'selected' : '' ?>>Outro</option>
-    </select><br><br>
+        form {
+            background: #fffdfa;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+        }
 
-    <button type="submit">Salvar</button>
-</form>
+        input, select, button {
+            margin-top: 12px;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #f4a300;
+            color: white;
+            border: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #d18e00;
+        }
+
+        .msg {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <a href='listar_funcionarios.php' class="voltar">Voltar</a>
+
+    <h2>Editar Funcionário</h2>
+
+    <?php if ($result_msg) echo "<div class='msg'>{$result_msg}</div>"; ?>
+
+    <form method="post">
+        <label>Usuário:</label>
+        <input type="text" name="usuario" value="<?= $funcionario['usuario'] ?>">
+
+        <label>Nome completo:</label>
+        <input type="text" name="nome_completo" value="<?= $funcionario['nome_completo'] ?>">
+
+        <label>Email:</label>
+        <input type="email" name="email" value="<?= $funcionario['email'] ?>">
+
+        <label>Função:</label>
+        <select name="funcao">
+            <option value="funcionario" <?= $funcionario['funcao'] == 'funcionario' ? 'selected' : '' ?>>Funcionário</option>
+            <option value="outro" <?= $funcionario['funcao'] == 'outro' ? 'selected' : '' ?>>Outro</option>
+        </select>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+</body>
+</html>
