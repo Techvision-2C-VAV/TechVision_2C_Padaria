@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25/08/2025 às 23:43
+-- Tempo de geração: 29/08/2025 às 13:35
 -- Versão do servidor: 10.4.32-MariaDB
 -- Versão do PHP: 8.2.12
 
@@ -67,7 +67,7 @@ CREATE TABLE `produtos` (
 
 INSERT INTO `produtos` (`idProd`, `nome`, `categoria`, `preco`, `quantidade`, `fotos`) VALUES
 (1, 'Brioche', 'Pães Doces', 10.00, 22, 'imagens/brioche.jpg'),
-(42, 'Donuts', 'Doces', 5.00, 10, 'imagens/68acd87689b34.jpg');
+(43, 'Donuts', 'Doces', 5.00, 10, 'imagens/68b18ebe8abeb.jpg');
 
 --
 -- Índices para tabelas despejadas
@@ -99,7 +99,7 @@ ALTER TABLE `funcionarios`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `idProd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `idProd` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
