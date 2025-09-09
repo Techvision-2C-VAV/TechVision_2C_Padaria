@@ -21,13 +21,13 @@
 
       <ul id="nav_list">
         <li class="nav-item active">
-            <a href="#home ">Início</a>
+            <a href="#home">Início</a>
         </li>
         <li class="nav-item">
-            <a href="#menu ">Cardápio</a>
+            <a href="#menu">Cardápio</a>
         </li>
         <li class="nav-item">
-            <a href="#testimonials ">Avaliações</a>
+            <a href="#testimonials">Avaliações</a>
         </li>
       </ul>
     <button class="btn-default">
@@ -35,7 +35,7 @@
     </button>
 
     <button id="mobile_btn">
-      <i class="fa-solid fa-bars" > </i>
+      <i class="fa-solid fa-bars"> </i>
     </button>
 
     </nav>
@@ -43,10 +43,10 @@
     <div id="mobile_menu">
       <ul id="mobile_nav_list">
         <li class="nav-item">
-            <a href="#home ">Início</a>
+            <a href="#home">Início</a>
         </li>
         <li class="nav-item">
-            <a href="#menu ">Cardápio</a>
+            <a href="#menu">Cardápio</a>
         </li>
         <li class="nav-item">
             <a href="#testimonials ">Avaliações</a>
@@ -67,12 +67,12 @@
       <div id="cta">
 
         <h1 class="title">
-          O sabor que vai até 
-          <span>você</span>
+          O Sabor que vai até 
+          <span>você!</span>
         </h1>
 
-        <p class="description">aaaaaaaaa aaaa aaaaaaaaaaa aaaaaaaa aaaaa aaa
-          aaaaaaaa aaaaaaaaaaaa aaa aaaaa aaaaa
+        <p class="description">A Grano D´Oro nasceu para unir tradição e sofisticação na arte da panificação. Com ingredientes selecionados e atenção aos detalhes,
+             oferece produtos de alta qualidade em um ambiente elegante, proporcionando uma experiência única aos clientes.
         </p>
 
         <div id="cta_buttons">
@@ -108,7 +108,7 @@
       <img src="imagens/banner.png" alt="">
 
     </div>
-    </sction>
+    </section>
 
  <section id="menu">
             <h2 class="section-title">Cardápio</h2>
@@ -120,14 +120,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish.png" class="dish-image" alt="">
+                    <img src="imagens/variosPao.jpg" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Pães Especiais
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Pães fresquinhos da maior qualidade e variedade!
                     </span>
 
                     <div class="dish-rate">
@@ -140,7 +140,7 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4> À Partir de R$20,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -152,14 +152,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish2.png" class="dish-image" alt="">
+                    <img src="imagens/bolochu.jpg" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Bolos
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Bolos de Padaria, com diversos sabores e recheios.
                     </span>
 
                     <div class="dish-rate">
@@ -172,7 +172,7 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4> À Partir de R$60,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -184,14 +184,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish3.png" class="dish-image" alt="">
+                    <img src="imagens/paofrances.avif" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Pão Francês
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Nosso clássico brasileiro com nosso toque especial.
                     </span>
 
                     <div class="dish-rate">
@@ -204,7 +204,7 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4>R$20,00 O KG!</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -216,14 +216,14 @@
                         <i class="fa-solid fa-heart"></i>
                     </div>
 
-                    <img src="src/images/dish4.png" class="dish-image" alt="">
+                    <img src="imagens/croissant.avif" class="dish-image" alt="">
 
                     <h3 class="dish-title">
-                        Lorem Ipsum
+                        Croissants
                     </h3>
 
                     <span class="dish-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        O amanteigado queridinho com um toque de Brasilidade.
                     </span>
 
                     <div class="dish-rate">
@@ -236,7 +236,7 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00</h4>
+                        <h4> À Partir de R$20,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -258,11 +258,11 @@
 
                 <div id="feedbacks">
                     <div class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <img src="imagens/userwoman.jpg" class="feedback-avatar" alt="">
 
                         <div class="feedback-content">
                             <p>
-                                Fulana de Tal
+                                Olívia
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -272,18 +272,18 @@
                                 </span>
                             </p>
                             <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                                "Adoro a qualidade e o sabor dos pães daqui! Sempre fresquinhos e 
+                                feitos com muito carinho."
                             </p>
                         </div>
                     </div>
 
                     <div class="feedback">
-                        <img src="src/images/avatar.png" class="feedback-avatar" alt="">
+                        <img src="imagens/userman.jpg" class="feedback-avatar" alt="">
 
                         <div class="feedback-content">
                             <p>
-                                Fulana de Tal
+                                Guilhermo
                                 <span>
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -293,8 +293,8 @@
                                 </span>
                             </p>
                             <p>
-                                "Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                                Repellat voluptatibus cumque dolor ea est quae alias necessitatibus"
+                                "Variedade incrível de produtos e tudo sempre muito saboroso.
+                                 Recomendo de olhos fechados!"
                             </p>
                         </div>
                     </div>
