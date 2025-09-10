@@ -76,7 +76,7 @@
         </p>
 
         <div id="cta_buttons">
-         <a href="#" class="btn-default"> Ver Cardápio</a> 
+         <a href="#menu" class="btn-default"> Ver Cardápio</a> 
 
         <a href="tel:+55555555555" id="phone_button">
         <button class="btn-default">
@@ -316,7 +316,7 @@
       </span>
 
       <div class="social-media-buttons">
-        <a href="">
+        <a href="https://wa.me/551123456789">
         <i class="fa-brands fa-whatsapp"></i>
         </a>
 
