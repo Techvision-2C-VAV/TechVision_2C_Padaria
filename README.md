@@ -7,10 +7,10 @@ Bem-vindo ao repositório oficial do **Sistema de Padaria**, um projeto desenvol
 ## 👥 Equipe de Desenvolvimento
 Este projeto foi realizado pelos alunos do **2º ano do curso de Desenvolvimento de Sistemas**:
 
-- **Beatriz Lima de Carvalho**  
-- **Clarice Dias Ribeiro**  
-- **Gustavo Guilherme Fernandes Silva**  
-- **Vinícius Gomes Correia**  
+- <img src="https://github.com/BeatrizLima08.png" width="40" style="border-radius:50%"> **Beatriz Lia de Carvalho**  
+- <img src="https://github.com/clarihlinda.png" width="40" style="border-radius:50%"> **Clarice Dias Ribeiro**  
+- <img src="https://github.com/GustavoGG2807.png" width="40" style="border-radius:50%"> **Gustavo Guilherme Fernandes Silva**  
+- <img src="https://github.com/vinigc-dev.png" width="40" style="border-radius:50%"> **Vinícius Gomes Correia**
 
 **Orientadores:**  
 - Ronildo Aparecido Ferreira
