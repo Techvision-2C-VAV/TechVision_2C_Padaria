@@ -102,7 +102,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
 
-    <a href="entrar.php">Voltar</a>
+    <a href="dashboard.php">Voltar</a>
 
     <h2>Alterar Senha</h2>
 

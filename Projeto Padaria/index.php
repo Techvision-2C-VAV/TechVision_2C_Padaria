@@ -140,7 +140,6 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4> À Partir de R$20,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -172,7 +171,6 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4> À Partir de R$60,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -204,7 +202,6 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4>R$20,00 O KG!</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>
@@ -236,7 +233,6 @@
                     </div>
 
                     <div class="dish-price">
-                        <h4> À Partir de R$20,00</h4>
                         <button class="btn-default">
                             <i class="fa-solid fa-basket-shopping"></i>
                         </button>

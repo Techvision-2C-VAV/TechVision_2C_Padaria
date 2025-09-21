@@ -2,11 +2,34 @@
 include "proteger.php";
 include "conexao.php";
 
-if ($_SESSION['funcao'] != 'repositor' && $_SESSION['funcao'] != 'gerente') {
-    exit("Acesso negado.");
+// Ordenação padrão
+$ordenarPor = "idProd ASC";
+
+// Se tiver parâmetro "sort" e "order" na URL, define a ordenação
+if (isset($_GET['sort'])) {
+    $ordem = (isset($_GET['order']) && $_GET['order'] == 'desc') ? "DESC" : "ASC";
+
+    switch ($_GET['sort']) {
+        case "id":
+            $ordenarPor = "idProd $ordem";
+            break;
+        case "categoria":
+            $ordenarPor = "categoria $ordem";
+            break;
+        case "nome":
+            $ordenarPor = "nome $ordem";
+            break;
+        case "preco":
+            $ordenarPor = "preco $ordem";
+            break;
+        case "quantidade":
+            $ordenarPor = "quantidade $ordem";
+            break;
+    }
 }
 
-$result = $conn->query("SELECT * FROM produtos");
+// Executa consulta já ordenada
+$result = $conn->query("SELECT * FROM produtos ORDER BY $ordenarPor");
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -16,14 +39,14 @@ $result = $conn->query("SELECT * FROM produtos");
     <style>
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #fff9ef; /* bege claro */
+            background-color: #fff9ef;
             margin: 20px;
         }
 
         a {
             text-decoration: none;
             font-weight: 500;
-            color: #f4a300; /* amarelo */
+            color: #f4a300;
             margin-right: 15px;
             transition: 0.3s;
         }
@@ -38,6 +61,10 @@ $result = $conn->query("SELECT * FROM produtos");
         }
 
         .links {
+            margin-bottom: 20px;
+        }
+
+        .ordenacao {
             margin-bottom: 20px;
         }
 
@@ -94,13 +121,25 @@ $result = $conn->query("SELECT * FROM produtos");
     <a href='dashboard.php'>Voltar</a><br>
 
     <h2>Lista de Produtos</h2>
+    
+    <?php if ($_SESSION['funcao'] == 'gerente' || $_SESSION['funcao'] == 'repositor'): ?>
+        <div class="links">
+            <a href='registrar_entrada.php'>Registrar Entrada de Produtos</a>
+            <?php if ($_SESSION['funcao'] == 'gerente'): ?>
+                <a href='cadastrar_produto.php'>Cadastrar Produtos</a>
+                <a href='atualizar_preco.php'>Atualizar Preços</a>
+            <?php endif; ?>
+        </div>
+    <?php endif; ?>
 
-    <div class="links">
-        <a href='registrar_entrada.php'>Registrar Entrada de Produtos</a>
-        <?php if ($_SESSION['funcao'] == 'gerente'): ?>
-            <a href='cadastrar_produto.php'>Cadastrar Produtos</a>
-            <a href='atualizar_preco.php'>Atualizar Preços</a>
-        <?php endif; ?>
+    <!-- Menu de Ordenação -->
+    <div class="ordenacao">
+        <strong>Ordenar por:</strong><br>
+        ID: <a href="?sort=id&order=asc">↑</a> <a href="?sort=id&order=desc">↓</a> |
+        Categoria: <a href="?sort=categoria&order=asc">↑</a> <a href="?sort=categoria&order=desc">↓</a> |
+        Nome: <a href="?sort=nome&order=asc">↑</a> <a href="?sort=nome&order=desc">↓</a> |
+        Preço: <a href="?sort=preco&order=asc">↑</a> <a href="?sort=preco&order=desc">↓</a> |
+        Quantidade: <a href="?sort=quantidade&order=asc">↑</a> <a href="?sort=quantidade&order=desc">↓</a>
     </div>
 
     <table>
@@ -133,4 +172,3 @@ $result = $conn->query("SELECT * FROM produtos");
 
 </body>
 </html>
-

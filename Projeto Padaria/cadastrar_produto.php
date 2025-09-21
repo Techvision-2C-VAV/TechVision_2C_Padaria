@@ -18,13 +18,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_FILES['foto']) && $_FILES['foto']['error'] == 0) {
         $extensao = strtolower(pathinfo($_FILES['foto']['name'], PATHINFO_EXTENSION));
 
-        if ($extensao != "jpg") {
-            $result_msg = "<p style='color:red;'>Erro: a imagem deve estar no formato JPG.</p>";
+        // Extensões permitidas
+        $extensoesPermitidas = ["jpg", "jpeg", "png", "gif"];
+
+        if (!in_array($extensao, $extensoesPermitidas)) {
+            $result_msg = "<p style='color:red;'>Erro: a imagem deve estar nos formatos JPG, JPEG, PNG ou GIF.</p>";
         } else {
             $pasta = "imagens/";
             if (!is_dir($pasta)) mkdir($pasta, 0777, true);
 
-            $nomeArquivo = uniqid() . ".jpg";
+            // Gera nome único com a extensão correta
+            $nomeArquivo = uniqid() . "." . $extensao;
             $caminho = $pasta . $nomeArquivo;
 
             if (move_uploaded_file($_FILES['foto']['tmp_name'], $caminho)) {
@@ -36,11 +40,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 $result_msg = "<p style='color:red;'>Erro ao salvar a imagem.</p>";
             }
         }
-    } else {
-        $stmt = $conn->prepare("INSERT INTO produtos (nome, categoria, preco, quantidade, fotos) VALUES (?, ?, ?, ?, '')");
-        $stmt->bind_param("ssdi", $nome, $categoria, $preco, $quantidade);
-        $stmt->execute();
-        $result_msg = "<p style='color:green;'>Produto cadastrado sem imagem.</p>";
     }
 }
 ?>
@@ -148,8 +147,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <input type="number" name="quantidade" id="quantidade" required>
 
         <label for="foto">Imagem do Produto:</label>
-        <input type="file" name="foto" id="foto" accept=".jpg">
-        <small>Apenas imagens no formato JPG</small>
+        <input type="file" name="foto" id="foto" accept=".jpg,.jpeg,.png,.gif">
+        <small>Apenas imagens JPG, JPEG, PNG ou GIF</small>
 
         <input type="submit" value="Cadastrar Produto">
     </form>
